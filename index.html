@@ -13,7 +13,7 @@ window.applicationCache.ondownloading = function()
 
 window.applicationCache.onprogress = function(a)
 {
-	document.getElementById("progress").innerHTML="<h3>CARGANDO EL CACHE: "+(Math.round(100*(a.loaded/a.total)))+"% CARGA COMPLETA!!(SALGA DEL NAVEGADOR Y VUELVA A ENTRAR PARA LANZAR EL GOLDHEN)</h3>";
+	document.getElementById("progress").innerHTML="<h3>CARGANDO CACHE: "+(Math.round(100*(a.loaded/a.total)))+"% CARGA COMPLETA!!(SALGA DEL NAVEGADOR, DESACTIVE INTERNET Y VUELVA A ENTRAR)</h3>";
 };
 
 window.applicationCache.oncached = window.applicationCache.onupdateready = function()
